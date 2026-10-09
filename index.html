@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Holo-Artisan interactive portrait museum: real open-access artworks, individual viewers, gaze and local generative conversation.">
+  <title>Holo-Artisan · The Living Portrait Museum</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#" aria-label="Holo-Artisan home"><span class="brand-symbol">h<span>·</span>a</span><span>HOLO–ARTISAN<small data-i18n="brandSub">THE LIVING PORTRAIT MUSEUM</small></span></a>
+    <nav><span class="local-badge"><i></i><span data-i18n="private">本機互動 · 你的專屬視角</span></span><label class="language-label"><span class="sr-only" data-i18n="language">語言</span><select id="language" aria-label="Language"><option value="zh-TW">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="es">Español</option></select></label><a class="header-link" href="https://kuonanhong.github.io/HoloArtisanDemo/" target="_blank" rel="noopener" data-i18n="technical">技術展示 ↗</a></nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">ASYMMETRIC PERSONALIZED REALITY / VOL. 02</p><h1 data-i18n="title">一幅畫，<em>只對你回應。</em></h1></div>
+      <p class="intro-copy" data-i18n="intro">把目光停在一處，把心情說給畫中人聽。<br>每位觀眾，都有一段不同的相遇。</p>
+    </section>
+    <section class="exhibition-toolbar" aria-label="Exhibition controls">
+      <div class="exhibition-position"><span class="tiny-label" data-i18n="collection">OPEN COLLECTION</span><button id="prevArtwork" class="icon-button" aria-label="Previous artwork">←</button><span id="artworkCounter" class="counter">001 <span>/ 100</span></span><button id="nextArtwork" class="icon-button" aria-label="Next artwork">→</button><button id="openCollection" class="text-button" data-i18n="browse">瀏覽館藏</button></div>
+      <div class="model-cluster"><span id="modelStatus" class="model-status" role="status" data-i18n="modelIdle">排練模式 · 模型未載入</span><button id="loadModel" class="button button-dark" data-testid="load-model"><span class="small-spark">✦</span><span data-i18n="loadModel">啟動離線生成模型</span></button></div>
+    </section>
+    <div id="loadProgress" class="load-progress" hidden><span></span><p></p></div>
+
+    <section class="portrait-stage" aria-label="Personalized portrait experience">
+      <article class="visitor-panel">
+        <div class="panel-heading"><span class="number">01</span><h2 data-i18n="visitorHeading">此刻的你</h2><span class="tiny-label">THE VIEWER</span></div>
+        <div class="visitor-card"><div id="visitorAvatar" class="visitor-avatar"></div><span class="live-dot"></span><div class="visitor-identity"><strong id="visitorName">An</strong><span id="visitorPosition"></span></div></div>
+        <div class="visitor-switch"><button id="prevVisitor" data-testid="prev-visitor"><kbd>L</kbd><span data-i18n="previousViewer">上一位</span></button><span id="visitorNumber">01 / 06</span><button id="nextVisitor" data-testid="next-visitor"><span data-i18n="nextViewer">下一位</span><kbd>R</kbd></button></div>
+        <div class="field-label"><span data-i18n="feeling">選擇你的心情</span><span>Q / E</span></div>
+        <div id="emotions" class="emotion-grid" role="group" aria-label="Emotion">
+          <button data-emotion="joy" data-testid="emotion-joy" aria-pressed="true"><span>☺</span><b data-i18n="joy">喜</b></button><button data-emotion="anger" data-testid="emotion-anger" aria-pressed="false"><span>⌁</span><b data-i18n="anger">怒</b></button><button data-emotion="sadness" data-testid="emotion-sadness" aria-pressed="false"><span>☂</span><b data-i18n="sadness">哀</b></button><button data-emotion="delight" data-testid="emotion-delight" aria-pressed="false"><span>✧</span><b data-i18n="delight">樂</b></button>
+        </div>
+        <form id="conversationForm"><label class="field-label" for="utterance"><span data-i18n="saySomething">對畫中人說一句話</span><span id="characterCount">0 / 400</span></label><textarea id="utterance" data-testid="utterance" maxlength="400" rows="3" placeholder="你的微笑裡，藏著什麼故事？" required></textarea><div class="prompt-suggestions"><button type="button" id="suggestPrompt" data-i18n="tryQuestion">試試：你為什麼微笑？ ↗</button></div><button id="sendMessage" class="button button-accent" type="submit" data-testid="send-message"><span data-i18n="send">讓畫作回應我</span><span>↗</span></button><button id="cancelGeneration" class="cancel-generation" type="button" hidden data-i18n="cancelGeneration">停止生成</button></form>
+        <div class="gaze-readout"><span class="target-icon">+</span><div><span class="tiny-label" data-i18n="currentGaze">你的目光停在</span><strong id="gazeLabel"></strong></div><span id="gazeCoordinates">50 / 42</span></div>
+      </article>
+
+      <article class="art-panel original-panel">
+        <div class="panel-heading"><span class="number">02</span><h2 data-i18n="originalHeading">與原作相遇</h2><span class="tiny-label">THE ORIGINAL</span></div>
+        <div class="painting-surface" id="originalSurface"><span class="surface-note" data-i18n="originalTag">真實館藏 · 原作</span><img id="originalImage" alt="" draggable="false"><div id="gazeReticle" class="gaze-reticle"><i></i><span data-i18n="yourGaze">你的目光</span></div><div class="image-loading" id="imageLoading" data-i18n="imageLoading">正在展開畫作…</div><button id="gazeHint" class="surface-bottom" data-i18n="clickGaze">輕觸畫作，改變注視位置</button></div>
+        <div class="art-caption"><div><h3 id="artworkTitle"></h3><p id="artworkArtist"></p></div><span id="artworkDate"></span></div>
+        <div class="art-credit"><span id="artworkMuseum"></span><a id="artworkSource" target="_blank" rel="noopener" data-i18n="source">來源與授權 ↗</a></div>
+        <div class="face-tools"><button id="toggleFace" class="text-button" data-i18n="faceAdjust">調整人臉範圍</button><div id="faceControls" hidden><p data-i18n="faceHint">點一下原作定位人臉中心，再以滑桿調整大小。</p><label><span data-i18n="faceWidth">寬</span><input id="faceWidth" type="range" min="0.05" max="0.8" step="0.01" value="0.26"></label><label><span data-i18n="faceHeight">高</span><input id="faceHeight" type="range" min="0.05" max="0.9" step="0.01" value="0.35"></label><button id="resetFace" class="text-button" data-i18n="resetFace">重設</button></div></div>
+      </article>
+
+      <article class="art-panel response-panel">
+        <div class="panel-heading"><span class="number">03</span><h2 data-i18n="responseHeading">只在你眼中的回應</h2><span class="tiny-label">YOUR PRIVATE VIEW</span></div>
+        <div class="painting-surface response-surface"><div class="response-viewer"><i></i><span id="responseViewerLabel"></span></div><canvas id="responseCanvas" aria-label="Personalized portrait animation"></canvas><img id="neuralPortrait" alt="Neural portrait response" hidden><div class="response-overlay"><span id="responseEmotion"></span><span id="responseGesture"></span></div><span id="responseMethod" class="response-method" data-i18n="animationNote">表情動畫示意，非 AI 重繪</span></div>
+        <div class="response-caption"><div class="response-byline"><span class="response-dot"></span><span id="responseMode" data-i18n="rehearsal">互動排練 · 非模型生成</span><span id="responseTime"></span></div><p id="portraitReply" aria-live="polite" data-i18n="opening">「你好。走近一點，告訴我：今天的你，心裡是什麼顏色？」</p></div>
+      </article>
+    </section>
+
+    <details class="neural-settings"><summary><span>✦</span><span data-i18n="neuralTitle">神經人像生成 · 本機 CPU</span><span id="neuralStatus" data-i18n="neuralIdle">未連接 · 目前使用表情動畫</span></summary><div class="neural-settings-body"><p data-i18n="neuralCopy">選用 LivePortrait 本機服務，將人物表情生成為新影像。請先依附件說明啟動服務。</p><div><label class="sr-only" for="neuralEndpoint">LivePortrait service URL</label><input id="neuralEndpoint" type="url" value="http://127.0.0.1:8766" spellcheck="false"><button id="connectNeural" class="button button-dark" data-i18n="neuralConnect">連接本機服務</button></div></div></details>
+    <section class="museum-controls" aria-label="Movement and gaze controls">
+      <div class="hand-control gaze-control"><div class="control-heading"><button id="leftHandBadge" class="hand-badge" aria-label="Previous viewer (L)">L</button><div><h3 data-i18n="gazeControl">左手 · 頭部與眼睛</h3><p>W A S D</p></div><button id="centerGaze" class="small-control" data-i18n="centerGaze">回到中心</button></div><div class="dpad" id="gazePad"><button data-action="gaze-up" class="up" aria-label="Look up">↑</button><button data-action="gaze-left" class="left" aria-label="Look left">←</button><span class="pad-center">+</span><button data-action="gaze-right" class="right" aria-label="Look right">→</button><button data-action="gaze-down" class="down" aria-label="Look down">↓</button></div><div class="extra-controls"><button id="leftSwitchViewer"><span>◀</span><span data-i18n="switchViewer">切換觀眾</span></button><button id="leftEmotion"><span>☺</span><span data-i18n="switchEmotion">切換心情</span></button></div></div>
+      <div class="museum-window"><div class="museum-window-header"><div><span class="tiny-label" data-i18n="walkMuseum">WALK THROUGH THE MUSEUM</span><span id="visitorPopulation"></span></div><div class="camera-switch"><button id="cameraThird" class="active" data-testid="camera-third" data-i18n="thirdPerson">第三視角</button><button id="cameraFirst" data-testid="camera-first" data-i18n="firstPerson">第一視角</button></div></div><canvas id="museumCanvas" data-testid="museum-canvas" aria-label="Museum visitors and artwork navigation"></canvas><div class="museum-window-footer"><span id="walkStatus"></span><button id="pauseVisitors" class="text-button" data-i18n="pauseVisitors">暫停人流</button></div></div>
+      <div class="hand-control walk-control"><div class="control-heading"><button id="rightHandBadge" class="hand-badge" aria-label="Next viewer (R)">R</button><div><h3 data-i18n="walkControl">右手 · 在美術館漫步</h3><p>↑ ← ↓ →</p></div><button id="returnToArt" class="small-control" data-i18n="returnToArt">站回畫前</button></div><div class="dpad" id="walkPad"><button data-action="walk-up" class="up" aria-label="Walk forward">↑</button><button data-action="walk-left" class="left" aria-label="Walk left">←</button><span class="pad-center">✣</span><button data-action="walk-right" class="right" aria-label="Walk right">→</button><button data-action="walk-down" class="down" aria-label="Walk backward">↓</button></div><div class="extra-controls"><button id="rightSwitchViewer"><span>▶</span><span data-i18n="switchViewer">切換觀眾</span></button><button id="rightCamera"><span>◉</span><span data-i18n="switchCamera">切換視角</span></button></div></div>
+    </section>
+    <section class="experience-note"><p><span class="note-mark">✦</span><span data-i18n="walkHint">持續向左或向右走，就會進入下一幅畫。每位觀眾的心情、目光與對話各自保留。</span></p><p data-i18n="simulationNote">一般螢幕上的 APR 互動模擬；個別回應不代表已實現實體光學多工。心情與目光由你操控，沒有攝影機偵測。</p></section>
+    <section class="closing"><div><span class="eyebrow">ONE PANEL. MANY PERSONAL STORIES.</span><h2 data-i18n="closing">讓藝術，看見每一個你。</h2></div><a href="https://kuonanhong.github.io/HoloArtisanDemo/" target="_blank" rel="noopener" class="closing-link"><span data-i18n="exploreTech">探索 Holo-Artisan 技術展示</span><span>↗</span></a></section>
+  </main>
+  <footer><span>© HOLO–ARTISAN / 梵曜·遇見</span><span data-i18n="footer">開放館藏 · 裝置端生成 · 個人化互動</span><a href="docs/guide.html" data-i18n="instructions">使用與部署說明 ↗</a></footer>
+
+  <dialog id="collectionDialog"><div class="collection-header"><div><p class="eyebrow">THE OPEN COLLECTION</p><h2 data-i18n="collectionTitle">走進百幅真實畫作</h2></div><button id="closeCollection" class="icon-button" aria-label="Close collection">×</button></div><div class="collection-tools"><label><span class="sr-only" data-i18n="search">搜尋畫作或藝術家</span><input id="collectionSearch" type="search" data-testid="collection-search" placeholder="搜尋畫作或藝術家"></label><button id="portraitFilter" class="text-button" aria-pressed="false" data-i18n="portraitsOnly">只看人物畫</button><span id="collectionCount"></span></div><div id="collectionGrid" class="collection-grid"></div><p class="collection-license-note" data-i18n="collectionLicense">作品頁附來源與授權紀錄。畫作回應為當代互動創作，並非原作者發言。</p></dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="js/artworks.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/portrait-renderer.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/offline.js"></script>
+</body>
+</html>
