@@ -1,0 +1,23 @@
+{
+  "name": "opencc-js",
+  "version": "1.4.2",
+  "dist": {
+    "shasum": "37d29f577df1b6a582a89831523c96ffac089232",
+    "tarball": "https://registry.npmjs.org/opencc-js/-/opencc-js-1.4.2.tgz",
+    "fileCount": 57,
+    "integrity": "sha512-EdcspgdROiCCZDM+jZR6Pa670xW+EW2QhctPBQ8gRjg6lrx4IHEl+2s+kt5izk/TkxVRgdWuFgaGkaEdIUfdaw==",
+    "signatures": [
+      {
+        "sig": "MEUCIQCNuaXVR8EktXxlwJjknpjz95S4cwydJrIRDWRJEm8ixgIgcV9ziK8ZLnTXaDGvLIXSW5DKjUBf0tFBJ79S8KllNa0=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/opencc-js@1.4.2",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 6094454
+  }
+}
