@@ -1,0 +1,598 @@
+{
+  "version": "20261008-v2",
+  "bytes": 554405005,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 13836
+    },
+    {
+      "path": "styles.css",
+      "bytes": 28522
+    },
+    {
+      "path": "js/app.js",
+      "bytes": 31048
+    },
+    {
+      "path": "js/artworks.js",
+      "bytes": 156567
+    },
+    {
+      "path": "js/generator.js",
+      "bytes": 9740
+    },
+    {
+      "path": "js/i18n.js",
+      "bytes": 31794
+    },
+    {
+      "path": "js/offline.js",
+      "bytes": 3345
+    },
+    {
+      "path": "js/portrait-renderer.js",
+      "bytes": 5866
+    },
+    {
+      "path": "assets/art/cma-102578.jpg",
+      "bytes": 188231
+    },
+    {
+      "path": "assets/art/cma-109507.jpg",
+      "bytes": 179193
+    },
+    {
+      "path": "assets/art/cma-117030.jpg",
+      "bytes": 98079
+    },
+    {
+      "path": "assets/art/cma-119701.jpg",
+      "bytes": 114033
+    },
+    {
+      "path": "assets/art/cma-121946.jpg",
+      "bytes": 89477
+    },
+    {
+      "path": "assets/art/cma-122158.jpg",
+      "bytes": 122775
+    },
+    {
+      "path": "assets/art/cma-122341.jpg",
+      "bytes": 130459
+    },
+    {
+      "path": "assets/art/cma-122344.jpg",
+      "bytes": 200259
+    },
+    {
+      "path": "assets/art/cma-122347.jpg",
+      "bytes": 98233
+    },
+    {
+      "path": "assets/art/cma-123490.jpg",
+      "bytes": 62775
+    },
+    {
+      "path": "assets/art/cma-124080.jpg",
+      "bytes": 118372
+    },
+    {
+      "path": "assets/art/cma-124089.jpg",
+      "bytes": 99969
+    },
+    {
+      "path": "assets/art/cma-124092.jpg",
+      "bytes": 104958
+    },
+    {
+      "path": "assets/art/cma-124990.jpg",
+      "bytes": 106268
+    },
+    {
+      "path": "assets/art/cma-125247.jpg",
+      "bytes": 103396
+    },
+    {
+      "path": "assets/art/cma-125895.jpg",
+      "bytes": 122376
+    },
+    {
+      "path": "assets/art/cma-125951.jpg",
+      "bytes": 92285
+    },
+    {
+      "path": "assets/art/cma-127571.jpg",
+      "bytes": 144238
+    },
+    {
+      "path": "assets/art/cma-128394.jpg",
+      "bytes": 119511
+    },
+    {
+      "path": "assets/art/cma-130162.jpg",
+      "bytes": 129069
+    },
+    {
+      "path": "assets/art/cma-135875.jpg",
+      "bytes": 109655
+    },
+    {
+      "path": "assets/art/cma-136682.jpg",
+      "bytes": 90067
+    },
+    {
+      "path": "assets/art/cma-137259.jpg",
+      "bytes": 81029
+    },
+    {
+      "path": "assets/art/cma-137335.jpg",
+      "bytes": 180131
+    },
+    {
+      "path": "assets/art/cma-139730.jpg",
+      "bytes": 81311
+    },
+    {
+      "path": "assets/art/cma-141328.jpg",
+      "bytes": 74174
+    },
+    {
+      "path": "assets/art/cma-141549.jpg",
+      "bytes": 83680
+    },
+    {
+      "path": "assets/art/cma-141936.jpg",
+      "bytes": 52672
+    },
+    {
+      "path": "assets/art/cma-143206.jpg",
+      "bytes": 112078
+    },
+    {
+      "path": "assets/art/cma-145924.jpg",
+      "bytes": 210870
+    },
+    {
+      "path": "assets/art/cma-145999.jpg",
+      "bytes": 106238
+    },
+    {
+      "path": "assets/art/cma-146446.jpg",
+      "bytes": 56261
+    },
+    {
+      "path": "assets/art/cma-146469.jpg",
+      "bytes": 125505
+    },
+    {
+      "path": "assets/art/cma-147447.jpg",
+      "bytes": 135962
+    },
+    {
+      "path": "assets/art/cma-148369.jpg",
+      "bytes": 98656
+    },
+    {
+      "path": "assets/art/cma-149029.jpg",
+      "bytes": 96025
+    },
+    {
+      "path": "assets/art/cma-150055.jpg",
+      "bytes": 91538
+    },
+    {
+      "path": "assets/art/cma-152263.jpg",
+      "bytes": 126791
+    },
+    {
+      "path": "assets/art/cma-153406.jpg",
+      "bytes": 120718
+    },
+    {
+      "path": "assets/art/cma-153603.jpg",
+      "bytes": 164876
+    },
+    {
+      "path": "assets/art/cma-155819.jpg",
+      "bytes": 128496
+    },
+    {
+      "path": "assets/art/cma-160289.jpg",
+      "bytes": 66507
+    },
+    {
+      "path": "assets/art/cma-160885.jpg",
+      "bytes": 58678
+    },
+    {
+      "path": "assets/art/cma-163350.jpg",
+      "bytes": 105107
+    },
+    {
+      "path": "assets/art/cma-167142.jpg",
+      "bytes": 161759
+    },
+    {
+      "path": "assets/art/cma-169684.jpg",
+      "bytes": 119109
+    },
+    {
+      "path": "assets/art/cma-307326.jpg",
+      "bytes": 131074
+    },
+    {
+      "path": "assets/art/cma-95286.jpg",
+      "bytes": 125116
+    },
+    {
+      "path": "assets/art/cma-96263.jpg",
+      "bytes": 100170
+    },
+    {
+      "path": "assets/art/commons-10916202.jpg",
+      "bytes": 16962
+    },
+    {
+      "path": "assets/art/commons-10953200.jpg",
+      "bytes": 65211
+    },
+    {
+      "path": "assets/art/commons-14694840.jpg",
+      "bytes": 72475
+    },
+    {
+      "path": "assets/art/commons-15124754.jpg",
+      "bytes": 47679
+    },
+    {
+      "path": "assets/art/commons-15972511.jpg",
+      "bytes": 112640
+    },
+    {
+      "path": "assets/art/commons-15978706.jpg",
+      "bytes": 76737
+    },
+    {
+      "path": "assets/art/commons-19949440.jpg",
+      "bytes": 97599
+    },
+    {
+      "path": "assets/art/commons-23798586.jpg",
+      "bytes": 42971
+    },
+    {
+      "path": "assets/art/commons-38035098.jpg",
+      "bytes": 43182
+    },
+    {
+      "path": "assets/art/commons-5792978.jpg",
+      "bytes": 149904
+    },
+    {
+      "path": "assets/art/commons-74092760.jpg",
+      "bytes": 249228
+    },
+    {
+      "path": "assets/art/commons-74159797.jpg",
+      "bytes": 264793
+    },
+    {
+      "path": "assets/art/commons-74171553.jpg",
+      "bytes": 174648
+    },
+    {
+      "path": "assets/art/commons-74172241.jpg",
+      "bytes": 217117
+    },
+    {
+      "path": "assets/art/commons-74172285.jpg",
+      "bytes": 160639
+    },
+    {
+      "path": "assets/art/commons-74209515.jpg",
+      "bytes": 175608
+    },
+    {
+      "path": "assets/art/commons-74209550.jpg",
+      "bytes": 237519
+    },
+    {
+      "path": "assets/art/commons-74209611.jpg",
+      "bytes": 85236
+    },
+    {
+      "path": "assets/art/commons-7548781.jpg",
+      "bytes": 174409
+    },
+    {
+      "path": "assets/art/extra-botticellisimonetta.jpg",
+      "bytes": 122188
+    },
+    {
+      "path": "assets/art/extra-botticelliyoung.jpg",
+      "bytes": 137460
+    },
+    {
+      "path": "assets/art/extra-davidsrecamier.jpg",
+      "bytes": 52342
+    },
+    {
+      "path": "assets/art/extra-durer1498.jpg",
+      "bytes": 204046
+    },
+    {
+      "path": "assets/art/extra-durer1500.jpg",
+      "bytes": 153444
+    },
+    {
+      "path": "assets/art/extra-gainsboroughblue.jpg",
+      "bytes": 95202
+    },
+    {
+      "path": "assets/art/extra-gainsboroughsarah.jpg",
+      "bytes": 236850
+    },
+    {
+      "path": "assets/art/extra-goyalduchess.jpg",
+      "bytes": 73073
+    },
+    {
+      "path": "assets/art/extra-goyalisabel.jpg",
+      "bytes": 132877
+    },
+    {
+      "path": "assets/art/extra-goyaself.jpg",
+      "bytes": 237022
+    },
+    {
+      "path": "assets/art/extra-holbeinambassadors.jpg",
+      "bytes": 84456
+    },
+    {
+      "path": "assets/art/extra-holbeinanne.jpg",
+      "bytes": 219670
+    },
+    {
+      "path": "assets/art/extra-ingresbertin.jpg",
+      "bytes": 116168
+    },
+    {
+      "path": "assets/art/extra-ingreshaussonville.jpg",
+      "bytes": 74700
+    },
+    {
+      "path": "assets/art/extra-ingresmoitessier.jpg",
+      "bytes": 74204
+    },
+    {
+      "path": "assets/art/extra-raphaelcastiglione.jpg",
+      "bytes": 234377
+    },
+    {
+      "path": "assets/art/extra-raphaeldonna.jpg",
+      "bytes": 214516
+    },
+    {
+      "path": "assets/art/extra-raphaeljulius.jpg",
+      "bytes": 188997
+    },
+    {
+      "path": "assets/art/extra-rembrandt1659.jpg",
+      "bytes": 121604
+    },
+    {
+      "path": "assets/art/extra-rembrandtgold.jpg",
+      "bytes": 48937
+    },
+    {
+      "path": "assets/art/extra-titiancharles.jpg",
+      "bytes": 138029
+    },
+    {
+      "path": "assets/art/extra-titianman.jpg",
+      "bytes": 153119
+    },
+    {
+      "path": "assets/art/extra-titianself.jpg",
+      "bytes": 173671
+    },
+    {
+      "path": "assets/art/extra-vangoghadeline.jpg",
+      "bytes": 100956
+    },
+    {
+      "path": "assets/art/extra-vangoghchicago.jpg",
+      "bytes": 158655
+    },
+    {
+      "path": "assets/art/extra-vangoghear.jpg",
+      "bytes": 317555
+    },
+    {
+      "path": "assets/art/extra-vangoghpostman.jpg",
+      "bytes": 140625
+    },
+    {
+      "path": "assets/art/extra-velazquezinnocent.jpg",
+      "bytes": 72280
+    },
+    {
+      "path": "assets/art/extra-velazquezpareja.jpg",
+      "bytes": 190747
+    },
+    {
+      "path": "assets/art/extra-vermeerredhat.jpg",
+      "bytes": 67994
+    },
+    {
+      "path": "assets/art/girl-pearl-earring.jpg",
+      "bytes": 275733
+    },
+    {
+      "path": "assets/art/mona-lisa.jpg",
+      "bytes": 239082
+    },
+    {
+      "path": "assets/art/source-records.json",
+      "bytes": 113041
+    },
+    {
+      "path": "assets/art/validation.json",
+      "bytes": 22339
+    },
+    {
+      "path": "assets/icon.svg",
+      "bytes": 260
+    },
+    {
+      "path": "assets/HoloUICJK.woff",
+      "bytes": 13631744
+    },
+    {
+      "path": "model/manifest.json",
+      "bytes": 2131
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part01",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part02",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part03",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part04",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part05",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part06",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part07",
+      "bytes": 67108864
+    },
+    {
+      "path": "model/qwen2.5-0.5b-q4km.part08",
+      "bytes": 21637984
+    },
+    {
+      "path": "model/runtime-manifest.json",
+      "bytes": 18157
+    },
+    {
+      "path": "vendor/model-opencc-source.json",
+      "bytes": 790
+    },
+    {
+      "path": "vendor/model-opencc.js",
+      "bytes": 1195473
+    },
+    {
+      "path": "vendor/model-wllama/README_banner.png",
+      "bytes": 29365
+    },
+    {
+      "path": "vendor/model-wllama/assets/screenshot_0.png",
+      "bytes": 179144
+    },
+    {
+      "path": "vendor/model-wllama/cpp/dump.bin",
+      "bytes": 204
+    },
+    {
+      "path": "vendor/model-wllama/cpp/dump2.bin",
+      "bytes": 224
+    },
+    {
+      "path": "vendor/model-wllama/cpp/generate_glue_prototype.js",
+      "bytes": 3265
+    },
+    {
+      "path": "vendor/model-wllama/esm/index.js",
+      "bytes": 382633
+    },
+    {
+      "path": "vendor/model-wllama/esm/index.min.js",
+      "bytes": 331458
+    },
+    {
+      "path": "vendor/model-wllama/esm/wasm/wllama.wasm",
+      "bytes": 8763949
+    },
+    {
+      "path": "vendor/model-wllama/package.json",
+      "bytes": 2433
+    },
+    {
+      "path": "vendor/model-wllama/scripts/build_source_map.js",
+      "bytes": 9295
+    },
+    {
+      "path": "vendor/model-wllama/scripts/check_debug_build.js",
+      "bytes": 917
+    },
+    {
+      "path": "vendor/model-wllama/scripts/check_package_size.js",
+      "bytes": 738
+    },
+    {
+      "path": "vendor/model-wllama/scripts/generate_wasm_from_cdn.js",
+      "bytes": 746
+    },
+    {
+      "path": "vendor/model-wllama/scripts/http_server.js",
+      "bytes": 1636
+    },
+    {
+      "path": "vendor/model-wllama/src/wasm/wllama.js",
+      "bytes": 138603
+    },
+    {
+      "path": "vendor/model-wllama/src/wasm/wllama.wasm",
+      "bytes": 8763949
+    },
+    {
+      "path": "vendor/model-wllama/src/workers-code/llama-cpp.js",
+      "bytes": 15790
+    },
+    {
+      "path": "vendor/model-wllama/src/workers-code/opfs-utils.js",
+      "bytes": 4121
+    },
+    {
+      "path": "vendor/model-wllama/tsconfig.build.json",
+      "bytes": 879
+    },
+    {
+      "path": "vendor/model-wllama-compat/index.js",
+      "bytes": 31
+    },
+    {
+      "path": "vendor/model-wllama-compat/package.json",
+      "bytes": 693
+    },
+    {
+      "path": "vendor/model-wllama-compat/wasm/wllama.js",
+      "bytes": 171615
+    },
+    {
+      "path": "vendor/model-wllama-compat/wasm/wllama.wasm",
+      "bytes": 16005007
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 280
+    }
+  ]
+}
