@@ -1,0 +1,143 @@
+{
+  "testedAt": "2026-10-08T16:14:58.100Z",
+  "browser": "138.0.7204.0",
+  "passed": true,
+  "errors": [],
+  "external": [],
+  "languages": [
+    {
+      "lang": "en",
+      "title": "One portrait. A reply just for you."
+    },
+    {
+      "lang": "ja",
+      "title": "一枚の肖像。あなただけへの返事。"
+    },
+    {
+      "lang": "ko",
+      "title": "하나의 초상화.당신만을 위한 대답."
+    },
+    {
+      "lang": "es",
+      "title": "Un retrato. Una respuesta para ti."
+    },
+    {
+      "lang": "zh-TW",
+      "title": "一幅畫，只對你回應。"
+    }
+  ],
+  "artworks": 100,
+  "controls": [
+    "L/R keyboard and touch viewer switching",
+    "4 emotions",
+    "input does not steal keys",
+    "keyboard independent gaze+walk",
+    "walk through all100 artworks",
+    "first/third view",
+    "collection search",
+    "mobile simultaneous touch pads",
+    "per-viewer response state"
+  ],
+  "generation": {
+    "emotion": "joy",
+    "gesture": "smile",
+    "text": "我笑時，就像在和你分享一個故事，讓你感到安心和溫暖。你的微笑，就像是那晚在咖啡館的咖啡，讓我感到如此的安心。你的眼眸，就像那晚的星空，讓我感到如此的寧靜。我的微笑，就像是那晚的晚餐，讓我感到如此的溫暖。所以",
+    "source": "local-llm",
+    "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+    "backend": "wasm-cpu",
+    "elapsedMs": 29829,
+    "usage": {
+      "completion_tokens": 14,
+      "prompt_tokens": 106,
+      "total_tokens": 120,
+      "prompt_tokens_details": {
+        "cached_tokens": 3
+      }
+    },
+    "raw": "{\"text\":\"我笑時，就像在和你分享一個故事，讓你感到安心和温暖。你的微笑，就像是那晚在咖啡館的咖啡，讓我感到如此的安心。你的眼眸，就像那晚的星空，讓我感到如此的宁静。我的微笑，就像是那晚的晚餐，讓我感到如此的温暖。所以\",\"emotion\":\"joy\",\"gesture\":\"smile\"}",
+    "rawText": "我笑時，就像在和你分享一個故事，讓你感到安心和温暖。你的微笑，就像是那晚在咖啡館的咖啡，讓我感到如此的安心。你的眼眸，就像那晚的星空，讓我感到如此的宁静。我的微笑，就像是那晚的晚餐，讓我感到如此的温暖。所以",
+    "rawControls": "{\"emotion\": \"joy\", \"gesture\": \"smile\"}",
+    "generationPasses": 2,
+    "visualMode": "portrait-animation",
+    "inputContext": {
+      "emotion": "sadness",
+      "gaze": {
+        "x": 0.445,
+        "y": 0.313,
+        "label": "人物的嘴角"
+      },
+      "utterance": "妳的微笑為什麼讓人平靜？",
+      "artworkId": "mona-lisa"
+    },
+    "dirty": false,
+    "input": {
+      "artwork": {
+        "id": "mona-lisa",
+        "title": "Mona Lisa",
+        "titleZh": "蒙娜麗莎",
+        "artist": "Leonardo da Vinci",
+        "date": "c. 1503–1506",
+        "museum": "Louvre Museum",
+        "image": "assets/art/mona-lisa.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+        "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/960px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "Public domain (PD-Art; Commons Public Domain Mark)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "portrait": true,
+        "faceBox": {
+          "x": 0.34,
+          "y": 0.145,
+          "w": 0.28,
+          "h": 0.25
+        },
+        "faceBoxMethod": "Manually estimated face region including forehead and chin; no automated face detection.",
+        "rightsEvidence": {
+          "provider": "Wikimedia Commons",
+          "licenseShortName": "Public domain",
+          "copyrighted": "False",
+          "reviewed": "2026-10-08"
+        },
+        "width": 671,
+        "height": 1000,
+        "sourceImageSha256": "5f223c31ba0a477eb7cbe5e5f959d822cbfc46081b19b96498cbd5601d9ac81d",
+        "sourceImageSize": [
+          960,
+          1431
+        ],
+        "sha256": "871baeccf145f0fdd774a197e2c0a0ffa1b5a387fe7a0f0dcb2ce93b744ab909",
+        "bytes": 239082,
+        "modifications": "Proportional downsize to <=1000 px long edge and JPEG recompression. No crop, color edit, AI redraw or watermark removal."
+      },
+      "utterance": "妳的微笑為什麼讓人平靜？",
+      "emotion": "sadness",
+      "gaze": {
+        "x": 0.445,
+        "y": 0.313,
+        "label": "人物的嘴角"
+      },
+      "language": "zh-TW"
+    },
+    "neuralSeconds": 6.092,
+    "info": {
+      "status": "ready",
+      "ready": true,
+      "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+      "backend": "llama.cpp / WebAssembly CPU",
+      "gpu": false,
+      "threads": 4,
+      "bytes": 491400032,
+      "error": null,
+      "generations": 1,
+      "runtimeVersion": "3.8.1",
+      "libllama": "b11364-46ca246",
+      "integrityChecked": true
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "locale": "ja",
+    "multiTouch": true
+  },
+  "limitations": "Linux Chromium and mobile emulation; no physical mobile/Windows/macOS/Safari devices."
+}

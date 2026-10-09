@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "testedAt": "2026-10-08T16:17:33.080Z",
+  "browser": "138.0.7204.0",
+  "network": "Playwright context.setOffline(true) before new page navigation and inference",
+  "cacheBytes": 554405005,
+  "cacheFiles": 148,
+  "lastArtworkLoaded": "cma-145924",
+  "model": {
+    "status": "ready",
+    "ready": true,
+    "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+    "backend": "llama.cpp / WebAssembly CPU",
+    "gpu": false,
+    "threads": 1,
+    "bytes": 491400032,
+    "error": null,
+    "generations": 1,
+    "runtimeVersion": "3.8.1",
+    "libllama": "b11364-46ca246",
+    "integrityChecked": true
+  },
+  "reply": "I smile at you, and I know you feel joy, for you look at the figure and center (x=0.50,y=0.43).",
+  "elapsedMs": 70161,
+  "pageErrors": [],
+  "limitations": "Desktop Chromium cache and offline emulation; physical phone storage eviction and mobile browser quotas not verified."
+}

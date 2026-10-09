@@ -1,0 +1,118 @@
+{
+  "testedAt": "2026-10-08T15:42:43.139Z",
+  "browser": "138.0.7204.0",
+  "gpuDisabled": true,
+  "externalRequests": [],
+  "pageErrors": [],
+  "loadAndInferenceMs": 51150,
+  "info": {
+    "status": "ready",
+    "ready": true,
+    "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+    "backend": "llama.cpp / WebAssembly CPU",
+    "gpu": false,
+    "threads": 4,
+    "bytes": 491400032,
+    "error": null,
+    "generations": 0,
+    "runtimeVersion": "3.8.1",
+    "libllama": "b11364-46ca246",
+    "integrityChecked": true
+  },
+  "results": [
+    {
+      "input": {
+        "artwork": {
+          "id": "mona",
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci",
+          "date": "c. 1503–1519"
+        },
+        "utterance": "妳為什麼微笑？我今天很難過。",
+        "emotion": "sadness",
+        "gaze": {
+          "x": 0.5,
+          "y": 0.35,
+          "label": "mouth and smile"
+        },
+        "language": "zh-TW"
+      },
+      "result": {
+        "text": "因為今天我感到很難過，所以這張肖像畫上也有一個微笑的表情。",
+        "emotion": "sadness",
+        "gesture": "smile",
+        "source": "local-llm",
+        "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+        "backend": "wasm-cpu",
+        "elapsedMs": 21976,
+        "usage": null,
+        "raw": "{\"text\":\"因為今天我感到很難過，所以這張肖像畫上也有一個微笑的表情。\",\"emotion\":\"sadness\",\"gesture\":\"smile\"}",
+        "visualMode": "portrait-animation",
+        "inputContext": {
+          "emotion": "sadness",
+          "gaze": {
+            "x": 0.5,
+            "y": 0.35,
+            "label": "mouth and smile"
+          },
+          "utterance": "妳為什麼微笑？我今天很難過。",
+          "artworkId": "mona"
+        }
+      }
+    },
+    {
+      "input": {
+        "artwork": {
+          "id": "mona",
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci"
+        },
+        "utterance": "What do your hands tell me? I feel curious today.",
+        "emotion": "delight",
+        "gaze": {
+          "x": 0.5,
+          "y": 0.72,
+          "label": "folded hands"
+        },
+        "language": "en"
+      },
+      "result": {
+        "text": "Folded hands (x=0.50, y=0.72) tell me to ponder the mysteries of life.",
+        "emotion": "sadness",
+        "gesture": "nod",
+        "source": "local-llm",
+        "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+        "backend": "wasm-cpu",
+        "elapsedMs": 22412,
+        "usage": null,
+        "raw": "{\"text\":\"Folded hands (x=0.50, y=0.72) tell me to ponder the mysteries of life.\",\"emotion\":\"sadness\",\"gesture\":\"nod\"}",
+        "visualMode": "portrait-animation",
+        "inputContext": {
+          "emotion": "delight",
+          "gaze": {
+            "x": 0.5,
+            "y": 0.72,
+            "label": "folded hands"
+          },
+          "utterance": "What do your hands tell me? I feel curious today.",
+          "artworkId": "mona"
+        }
+      }
+    }
+  ],
+  "semanticChecks": [
+    {
+      "language": "zh-TW",
+      "notEcho": true,
+      "focusMentioned": true,
+      "emotionIsGenerated": false
+    },
+    {
+      "language": "en",
+      "notEcho": true,
+      "focusMentioned": true,
+      "emotionIsGenerated": true
+    }
+  ],
+  "evidenceScope": "Historical pre-role-fix, single-pass adapter: valid CPU/runtime/no-external-network check; dialogue prompts and timings are NOT the final two-pass adapter. See model-role-result.json for final prompt evidence."
+}

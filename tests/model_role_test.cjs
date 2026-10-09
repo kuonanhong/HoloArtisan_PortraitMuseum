@@ -1,0 +1,21 @@
+const fs=require('node:fs'),path=require('node:path'),http=require('node:http');
+const {chromium}=require(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES ? process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES+'/playwright' : 'playwright');
+const root=path.resolve(__dirname,'..');
+const types={'.html':'text/html','.js':'text/javascript','.wasm':'application/wasm','.json':'application/json'};
+(async()=>{
+ const server=http.createServer((req,res)=>{const p=path.resolve(root,'.'+decodeURIComponent(req.url.split('?')[0]));if(!p.startsWith(root+path.sep)){res.writeHead(403);return res.end()}try{const stat=fs.statSync(p);res.writeHead(200,{...(true?{'Cross-Origin-Opener-Policy':'same-origin','Cross-Origin-Embedder-Policy':'require-corp'}:{}),'Content-Type':types[path.extname(p)]||'application/octet-stream','Content-Length':stat.size});fs.createReadStream(p).pipe(res);}catch{res.writeHead(404);res.end();}}).listen(0,'127.0.0.1');await new Promise(r=>server.once('listening',r));
+ const port=server.address().port;const browser=await chromium.launch({executablePath:process.env.HOLO_CHROME_EXECUTABLE||(fs.existsSync('/workspace/scratch/8f390d6d5756/tmp/browser-runtime/chromium')?'/workspace/scratch/8f390d6d5756/tmp/browser-runtime/chromium':undefined),headless:true,args:['--no-sandbox','--disable-gpu','--disable-dev-shm-usage']});
+ const page=await browser.newPage();const external=[],errors=[];await page.route('**/*',route=>{const u=route.request().url();if(!u.startsWith(`http://127.0.0.1:${port}/`)&&!u.startsWith('blob:')&&!u.startsWith('data:')){external.push(u);return route.abort();}return route.continue();});
+ page.on('pageerror',e=>{errors.push(String(e));console.error('PAGEERROR',String(e))});page.on('console',m=>{if(m.type()==='error')console.error('BROWSER',m.text())});
+ try{await page.goto(`http://127.0.0.1:${port}/tests/model_test.html`);await page.exposeFunction('logModel',v=>console.log(JSON.stringify(v)));const loadStarted=Date.now();const info=await page.evaluate(()=>HoloGenerator.load(p=>window.logModel(p)));console.log('LOADED',JSON.stringify(info));
+ const art={id:'mona',title:'Mona Lisa',artist:'Leonardo da Vinci'};
+ const cases=[
+ {artwork:art,utterance:'妳的微笑為什麼讓人平靜？',emotion:'joy',gaze:{x:.5,y:.35,label:'嘴角與微笑'},language:'zh-TW'},
+ {artwork:art,utterance:'我今天很難過，妳能安慰我嗎？',emotion:'sadness',gaze:{x:.5,y:.25,label:'眼睛'},language:'zh-TW'},
+ {artwork:art,utterance:'What do your hands tell me? I feel curious today.',emotion:'delight',gaze:{x:.5,y:.72,label:'folded hands'},language:'en'}];
+ const results=[];for(const input of cases){console.log('GENERATE',input.language);const result=await page.evaluate(async input=>await HoloGenerator.generate(input),input);results.push({input,result});console.log('RESULT',JSON.stringify(result));if(result.text.trim()===input.utterance.trim())throw new Error('Model echoed the prompt'); if(/your answer|text=|emotion:/i.test(result.text))throw new Error('Model returned meta-instructions');}
+ const semanticChecks=results.map(({input,result},i)=>({language:input.language,notEcho:result.text.trim()!==input.utterance.trim(),firstPerson:input.language==='en'?/^I\b|^My\b/.test(result.text):/^我/.test(result.text),focusMentioned:i===0?/微笑|嘴|笑/.test(result.text):i===1?/眼|望|看/.test(result.text):/hands/i.test(result.text)}));
+ if(semanticChecks.some(x=>!x.notEcho||!x.firstPerson||!x.focusMentioned))throw new Error('Reply missed portrait identity or gaze');
+ const evidence={semanticChecks,testedAt:new Date().toISOString(),browser:await browser.version(),gpuDisabled:true,externalRequests:external,pageErrors:errors,loadAndInferenceMs:Date.now()-loadStarted,info,results,promptMessages:cases.map(input=>({input,messages:null})),generatorSHA256:require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(root,'js/generator.js'))).digest('hex')};evidence.promptMessages=await page.evaluate(cases=>cases.map(input=>({input,messages:HoloGenerator.buildMessages(input)})),cases);fs.writeFileSync(path.join(__dirname,'model-role-result.json'),JSON.stringify(evidence,null,2));if(external.length||errors.length)throw new Error('Unexpected network or page errors');
+ }finally{await browser.close();server.close();}
+})().catch(e=>{console.error(e);process.exitCode=1});
