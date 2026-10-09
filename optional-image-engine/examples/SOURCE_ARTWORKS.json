@@ -1,0 +1,79 @@
+{
+  "notice": "Generated portrait responses are adaptations for an interactive demonstration, not museum originals. Original paintings remain unchanged in the museum package.",
+  "source_artworks": [
+    {
+      "id": "mona-lisa",
+      "title": "Mona Lisa",
+      "titleZh": "蒙娜麗莎",
+      "artist": "Leonardo da Vinci",
+      "date": "c. 1503–1506",
+      "museum": "Louvre Museum",
+      "image": "assets/art/mona-lisa.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+      "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/960px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "Public domain (PD-Art; Commons Public Domain Mark)",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "portrait": true,
+      "faceBox": {
+        "x": 0.34,
+        "y": 0.12,
+        "w": 0.31,
+        "h": 0.27
+      },
+      "faceBoxMethod": "Manually estimated artwork-relative region; not face detection.",
+      "rightsEvidence": {
+        "provider": "Wikimedia Commons",
+        "licenseShortName": "Public domain",
+        "copyrighted": "False",
+        "reviewed": "2026-10-08"
+      },
+      "width": 671,
+      "height": 1000,
+      "sourceImageSha256": "5f223c31ba0a477eb7cbe5e5f959d822cbfc46081b19b96498cbd5601d9ac81d",
+      "sourceImageSize": [
+        960,
+        1431
+      ],
+      "sha256": "871baeccf145f0fdd774a197e2c0a0ffa1b5a387fe7a0f0dcb2ce93b744ab909",
+      "bytes": 239082,
+      "modifications": "Proportional downsize to <=1000 px long edge and JPEG recompression. No crop, color edit, AI redraw or watermark removal."
+    },
+    {
+      "id": "girl-pearl-earring",
+      "title": "Girl with a Pearl Earring",
+      "titleZh": "戴珍珠耳環的少女",
+      "artist": "Johannes Vermeer",
+      "date": "c. 1665",
+      "museum": "Mauritshuis",
+      "image": "assets/art/girl-pearl-earring.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_with_a_Pearl_Earring.jpg",
+      "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Girl_with_a_Pearl_Earring.jpg/960px-Girl_with_a_Pearl_Earring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "Public domain (PD-Art; Commons Public Domain Mark)",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "portrait": true,
+      "faceBox": {
+        "x": 0.3,
+        "y": 0.2,
+        "w": 0.38,
+        "h": 0.41
+      },
+      "faceBoxMethod": "Manually estimated artwork-relative region; not face detection.",
+      "rightsEvidence": {
+        "provider": "Wikimedia Commons",
+        "licenseShortName": "Public domain",
+        "copyrighted": "False",
+        "reviewed": "2026-10-08"
+      },
+      "width": 846,
+      "height": 1000,
+      "sourceImageSha256": "a73dbbea841366b256db645cb7563dfd5d27d0f2791cb7f1acf46cdc71b67260",
+      "sourceImageSize": [
+        960,
+        1135
+      ],
+      "sha256": "83cbfbfe1ada25b971a343a6f99beb94612dc69c80fd9d16b7fd143e7b3104c7",
+      "bytes": 275733,
+      "modifications": "Proportional downsize to <=1000 px long edge and JPEG recompression. No crop, color edit, AI redraw or watermark removal."
+    }
+  ]
+}

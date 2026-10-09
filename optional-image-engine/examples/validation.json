@@ -1,0 +1,200 @@
+{
+  "device": "cpu",
+  "torch": "2.6.0+cpu",
+  "threads": 4,
+  "network": "blocked by socket.create_connection monkeypatch during inference",
+  "results": [
+    {
+      "seconds": 7.114,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        110,
+        73,
+        535,
+        498
+      ],
+      "emotion": "joy",
+      "controls": {
+        "smile": 0.6400000000000001,
+        "brow": 0.4,
+        "gazeX": 0.0,
+        "gazeY": 0.0,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "mona-lisa",
+      "sha256": "ddb3dd826ad3f150f7ab5630b018cca0793dd949cc816dfa10fbd738dd59cd9f",
+      "offline": true,
+      "mean_abs_pixel_difference": 1.779939393939394
+    },
+    {
+      "seconds": 6.292,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        110,
+        73,
+        535,
+        498
+      ],
+      "emotion": "anger",
+      "controls": {
+        "smile": -0.27999999999999997,
+        "brow": -6.4,
+        "gazeX": -0.4,
+        "gazeY": -0.4,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "mona-lisa",
+      "sha256": "0615b8a4e0cbbd55c13b2f2103f91477536aca45e74ca25cc761b01191901c2d",
+      "offline": true,
+      "mean_abs_pixel_difference": 2.346556383507203
+    },
+    {
+      "seconds": 6.307,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        110,
+        73,
+        535,
+        498
+      ],
+      "emotion": "sadness",
+      "controls": {
+        "smile": -0.32000000000000006,
+        "brow": 4.0,
+        "gazeX": -0.19999999999999996,
+        "gazeY": 0.3999999999999999,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "mona-lisa",
+      "sha256": "87cc8598b56fa95e2af7890eb1fde77c19b75621e8af6001d6f02789c439482c",
+      "offline": true,
+      "mean_abs_pixel_difference": 2.1340298062593144
+    },
+    {
+      "seconds": 6.3,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        110,
+        73,
+        535,
+        498
+      ],
+      "emotion": "delight",
+      "controls": {
+        "smile": 0.96,
+        "brow": 1.6,
+        "gazeX": 0.3999999999999999,
+        "gazeY": -0.09999999999999998,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "mona-lisa",
+      "sha256": "fae0128626e10f81b16f2205b941be0f487599fda5087031be2d4adb825c28a1",
+      "offline": true,
+      "mean_abs_pixel_difference": 2.3393551912568307
+    },
+    {
+      "seconds": 6.787,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        121,
+        184,
+        682,
+        745
+      ],
+      "emotion": "joy",
+      "controls": {
+        "smile": 0.6400000000000001,
+        "brow": 0.4,
+        "gazeX": 0.0,
+        "gazeY": 0.0,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "girl-pearl-earring",
+      "sha256": "82c3bec82938e2320ed867d0636b6bb1b14662266ae5a3b98d842dff82aff3b9",
+      "offline": true,
+      "mean_abs_pixel_difference": 2.8207836879432624
+    },
+    {
+      "seconds": 5.924,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        121,
+        184,
+        682,
+        745
+      ],
+      "emotion": "anger",
+      "controls": {
+        "smile": -0.27999999999999997,
+        "brow": -6.4,
+        "gazeX": -0.4,
+        "gazeY": -0.4,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "girl-pearl-earring",
+      "sha256": "febafb602e1423116c1bb0b64897e4797c75c33fa52c61603f660ae41cae93ec",
+      "offline": true,
+      "mean_abs_pixel_difference": 3.4098167848699763
+    },
+    {
+      "seconds": 5.602,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        121,
+        184,
+        682,
+        745
+      ],
+      "emotion": "sadness",
+      "controls": {
+        "smile": -0.32000000000000006,
+        "brow": 4.0,
+        "gazeX": -0.19999999999999996,
+        "gazeY": 0.3999999999999999,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "girl-pearl-earring",
+      "sha256": "d2c3ab1175d41f9e6509a9dd5efcd6c6fe4e4c594377c7b659bc0b594b94dd24",
+      "offline": true,
+      "mean_abs_pixel_difference": 3.223339243498818
+    },
+    {
+      "seconds": 6.225,
+      "engine": "LivePortrait CPU",
+      "neural": true,
+      "cropPixels": [
+        121,
+        184,
+        682,
+        745
+      ],
+      "emotion": "delight",
+      "controls": {
+        "smile": 0.96,
+        "brow": 1.6,
+        "gazeX": 0.3999999999999999,
+        "gazeY": -0.09999999999999998,
+        "mouth": 0.9600000000000002
+      },
+      "description": "Learned feature warping and SPADE portrait synthesis; manually selected face crop; emotion/gaze/dialogue mapped to latent controls. Not diffusion, historical reconstruction, or optical holography.",
+      "artwork": "girl-pearl-earring",
+      "sha256": "08bfc61a2005da98866d3b8402def3722d0867a4cd959da9d2fc482e5a1c87f2",
+      "offline": true,
+      "mean_abs_pixel_difference": 3.4627470449172577
+    }
+  ]
+}

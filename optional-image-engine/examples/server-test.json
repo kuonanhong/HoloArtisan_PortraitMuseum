@@ -1,0 +1,30 @@
+[
+  {
+    "case": "health",
+    "ok": true,
+    "result": {
+      "ok": true,
+      "engine": "LivePortrait",
+      "device": "cpu",
+      "loaded": true,
+      "maxImageBytes": 5242880,
+      "version": 2
+    }
+  },
+  {
+    "case": "reject_foreign_origin",
+    "ok": true,
+    "status": 403
+  },
+  {
+    "case": "reject_file_path",
+    "ok": true,
+    "status": 400
+  },
+  {
+    "case": "real_neural_endpoint",
+    "ok": true,
+    "status": 200,
+    "seconds": 5.241
+  }
+]
