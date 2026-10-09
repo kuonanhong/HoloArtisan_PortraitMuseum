@@ -1,0 +1,811 @@
+{
+  "count": 100,
+  "distinctImageHashes": 100,
+  "portraitCount": 100,
+  "manualFaceBoxCount": 100,
+  "bytes": 12933345,
+  "cc0Count": 50,
+  "publicDomainCount": 50,
+  "checks": [
+    {
+      "id": "mona-lisa",
+      "sha256": "871baeccf145f0fdd774a197e2c0a0ffa1b5a387fe7a0f0dcb2ce93b744ab909",
+      "bytes": 239082,
+      "width": 671,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "girl-pearl-earring",
+      "sha256": "83cbfbfe1ada25b971a343a6f99beb94612dc69c80fd9d16b7fd143e7b3104c7",
+      "bytes": 275733,
+      "width": 846,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-vangoghchicago",
+      "sha256": "09e02a9bd5e27c2d11945b61adc7cac1f6df01ae5bd5ffe495dc8443929a4e43",
+      "bytes": 158655,
+      "width": 500,
+      "height": 634,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-rembrandtgold",
+      "sha256": "f118eb1546239e95100e5f81e32e1f76558a6ab3edfedfe60b64eb30ed069e33",
+      "bytes": 48937,
+      "width": 500,
+      "height": 545,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-durer1500",
+      "sha256": "7ed717ddc62a035c395d1e040bc45fb6e9d7f508fd9e034bc6928af943129d4d",
+      "bytes": 153444,
+      "width": 723,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-raphaelcastiglione",
+      "sha256": "b06046a5d5cec21a7daf3664bcacd479e899a971323bf3d352261acfce87e5e0",
+      "bytes": 234377,
+      "width": 804,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-vangoghear",
+      "sha256": "8a88192b2eb497f7bed4a583dc3284051edfb6bcd2d61ec84ea89471031b7c15",
+      "bytes": 317555,
+      "width": 823,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-rembrandt1659",
+      "sha256": "c2ede9d2a0003425a67e519b493f5e2d4d46facaf43f1dbc06af205c9486e977",
+      "bytes": 121604,
+      "width": 772,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-vermeerredhat",
+      "sha256": "e76135510b712a13f265136438dbb58ac851a91e11fcefc22ca3ce5392a91b9e",
+      "bytes": 67994,
+      "width": 500,
+      "height": 632,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-holbeinanne",
+      "sha256": "c16e7275793882a7afedf2b9c5e65a5f8380eb853fd646ce48ab2960b5c61b8c",
+      "bytes": 219670,
+      "width": 750,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-botticelliyoung",
+      "sha256": "c65be82bbe69a49555c89681ab599728d283ee11e46873a0d5aa8912f6f82c58",
+      "bytes": 137460,
+      "width": 744,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-goyaself",
+      "sha256": "a18f1859f6ee7add4cff63545b60f5444e7b6e9ce2b4bab4fe5e8f0df3603453",
+      "bytes": 237022,
+      "width": 744,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-durer1498",
+      "sha256": "45e4c82ab77933aa199461daad8f19568bf6a5b66183171f13f9a9bba1dc8878",
+      "bytes": 204046,
+      "width": 792,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-velazquezpareja",
+      "sha256": "aba72a2d1b6b21c2943a18d5bf3a51c5de9a5dff2f83a82467b48e14daff0bc6",
+      "bytes": 190747,
+      "width": 860,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-velazquezinnocent",
+      "sha256": "9a7ed797ef735fd3c3404ed84bc734bb11eeaec2345d5535eff3d47349d7fa27",
+      "bytes": 72280,
+      "width": 450,
+      "height": 547,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-raphaeldonna",
+      "sha256": "64a73ad5a3e9a77dde932b6976b333028b99c5125119f53d1e0f66c8b1483a8a",
+      "bytes": 214516,
+      "width": 777,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-raphaeljulius",
+      "sha256": "ddfcf5658ff3681d2b1434c847b8aea2a440a43abe37081150be557c03e2f79a",
+      "bytes": 188997,
+      "width": 736,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-gainsboroughsarah",
+      "sha256": "7efbf71c05cff0a8af96a8709565e36e63a00b5456d1e6252b773c814cee0e73",
+      "bytes": 236850,
+      "width": 795,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-titiancharles",
+      "sha256": "5d13e2d6b9d846c103e4d9174c2cca39f3a0fa30b02e3005154c5d6eaf60421e",
+      "bytes": 138029,
+      "width": 560,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-titianman",
+      "sha256": "3aa472659bf7bb6c0160330bc9e5c05ae27f923831314832adc3a2b96921dffd",
+      "bytes": 153119,
+      "width": 891,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-titianself",
+      "sha256": "31dab84cb799fda6cdb24777134db6d2f09e495b474bb1884a935c46d74d34fd",
+      "bytes": 173671,
+      "width": 731,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-goyalisabel",
+      "sha256": "84cb6f0aa05a2f8da05eb109a65a7ae8125646285076138857ab90e9020f589b",
+      "bytes": 132877,
+      "width": 661,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-goyalduchess",
+      "sha256": "1cf8d9f43d49c9cadfeb838cb6cbead4e101de3d6837b2b8aa760f208f749f4c",
+      "bytes": 73073,
+      "width": 700,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-vangoghadeline",
+      "sha256": "76b5bdfa0ddedf0e6e725420ef10447b9834096685e3890e0842f37c818ac50a",
+      "bytes": 100956,
+      "width": 500,
+      "height": 501,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-vangoghpostman",
+      "sha256": "0ed18fcf2ec0e2c2590c42e0dec585c769c6c3d7e86e04abc829eaac96664c7d",
+      "bytes": 140625,
+      "width": 500,
+      "height": 591,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-ingresbertin",
+      "sha256": "2fd537f56888f23de71477fc9a1ef31f707024dc172fff9e8e5e8ec38029feec",
+      "bytes": 116168,
+      "width": 784,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-ingresmoitessier",
+      "sha256": "b8d7d31f51b156bba32edd02b805dbdce9927daecee90dc3473bdc91296e74c2",
+      "bytes": 74204,
+      "width": 500,
+      "height": 738,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-ingreshaussonville",
+      "sha256": "5ad8acfa0a9c81daaf51a85e7180ae6ef916c938e0c2bb414c6555f64e38003a",
+      "bytes": 74700,
+      "width": 500,
+      "height": 701,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-gainsboroughblue",
+      "sha256": "d2d6c8a29b7e33750fea194ca89866b15398f21b55d09328be076b4879b0722b",
+      "bytes": 95202,
+      "width": 500,
+      "height": 727,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-holbeinambassadors",
+      "sha256": "69b78d43c1aecfb403fedec00628c95d449d388a32c7c848e148769ad8b5292a",
+      "bytes": 84456,
+      "width": 500,
+      "height": 493,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-davidsrecamier",
+      "sha256": "7bb96239af2ab59261d95bde1419a219252dbe248f4115226fe5349e1d98800d",
+      "bytes": 52342,
+      "width": 500,
+      "height": 355,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-botticellisimonetta",
+      "sha256": "e7fd25cc0f7b5997327226b2473fdfb4a90758ebf29b334c9b2e031c867fca5f",
+      "bytes": 122188,
+      "width": 500,
+      "height": 753,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-5792978",
+      "sha256": "c8a6edeaf88db51ccd4d4229a06c5d2222c6855b028a53f053a67234a45235fb",
+      "bytes": 149904,
+      "width": 780,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-7548781",
+      "sha256": "2312e9ad849a93d30fb186ea294d6ef93dd9a9fcf8d3e9ce9886385f382360de",
+      "bytes": 174409,
+      "width": 629,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-10916202",
+      "sha256": "ad9b083345b958e95493f5cc1f7bfcbdc80974ac2c4d8325b337808fc7515725",
+      "bytes": 16962,
+      "width": 284,
+      "height": 400,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-10953200",
+      "sha256": "04f2187b1151bcc19c743a9ae58858d11076f363d1d969364dfdad3be014b280",
+      "bytes": 65211,
+      "width": 387,
+      "height": 510,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-14694840",
+      "sha256": "616e430da30bbb658f94092f65b3897b1b17a289c5175248a5af404b39ce1ea1",
+      "bytes": 72475,
+      "width": 637,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-15124754",
+      "sha256": "f2ebb0d7aff7bea952358ea636f547097d9f9655f0c597cda7a0d915af4f749a",
+      "bytes": 47679,
+      "width": 619,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-15972511",
+      "sha256": "5d35d13dd46c652e07fc419a85336c317868675db3ab919eb6bdefcedc63122a",
+      "bytes": 112640,
+      "width": 607,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-15978706",
+      "sha256": "2e03e12b6e81176ede21393f21de14b6ca06b0014212219565c2d8e088ebf853",
+      "bytes": 76737,
+      "width": 638,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-19949440",
+      "sha256": "838e11a5a9d226cb5aafae760efd63909fe1b1e416056d57a6d5727aa4ae6bd0",
+      "bytes": 97599,
+      "width": 694,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-23798586",
+      "sha256": "863e05a894fc6665e62ffe51b1b0b86ffdc4ced1651e45c2893fb53bdc6820af",
+      "bytes": 42971,
+      "width": 611,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-38035098",
+      "sha256": "2ff6b00b2c4e483aa170f01816be49ddeee11291706e7b299301c69927df46ec",
+      "bytes": 43182,
+      "width": 468,
+      "height": 768,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74092760",
+      "sha256": "3ca85e93333d199c6f93ef5a3e1ffe37efd2fa97f3f3249f7b2ac68f6579e545",
+      "bytes": 249228,
+      "width": 825,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74159797",
+      "sha256": "e8b1058ad235a6d491cb7d59cb8dc8e439765c5ea2ff4136cf5833bb33e95900",
+      "bytes": 264793,
+      "width": 758,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74171553",
+      "sha256": "999d472e293b31a280393e595368155d1df2f558aa747f2bd335db9ccadccaaf",
+      "bytes": 174648,
+      "width": 793,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74172241",
+      "sha256": "9a678cff0ed321154bcb4166abd74b75c941c827cb2fbbf3f992e68028b3352b",
+      "bytes": 217117,
+      "width": 799,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74172285",
+      "sha256": "35b93dd43c6b3f5fb9f06f196c51efb7aefabe6ef0a3ff082e57798d2a17fd49",
+      "bytes": 160639,
+      "width": 735,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74209515",
+      "sha256": "6afec6470f4dfee83dbb6bc24c8229c63f8388572fae7ab66868b0cfb6bbd0f0",
+      "bytes": 175608,
+      "width": 743,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74209550",
+      "sha256": "37eedce78e465eeffe6f9f9876013597a2ce4bd11141aa2738716e1647ecb9ba",
+      "bytes": 237519,
+      "width": 787,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "commons-74209611",
+      "sha256": "0729b9188046ed5593f2c1a249ed3b507606ac8af44e9f599a97e634ce7ed29b",
+      "bytes": 85236,
+      "width": 737,
+      "height": 1000,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-124089",
+      "sha256": "c422681873963a2795927565bd2ae72011e3689dbb7fc0c854a65b3600573569",
+      "bytes": 99969,
+      "width": 738,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-160885",
+      "sha256": "47ea4b85cad0e7f601ba99a5c7eebcf95f4a789f30929fb77dc8c178f3d77fd6",
+      "bytes": 58678,
+      "width": 664,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-102578",
+      "sha256": "524f04563fceaef2e3aa16a2390cfbec1887aa03f38a815ca94774388e0ac1cc",
+      "bytes": 188231,
+      "width": 939,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-127571",
+      "sha256": "ed696094830617eee289fc596303ac1e5e7386125dbb7f5d810b6d05b624cfce",
+      "bytes": 144238,
+      "width": 824,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-109507",
+      "sha256": "949346982e4fccd58a2004d9f0c76b11d0a8e8967a3e5ce9f16749bb1c90ca58",
+      "bytes": 179193,
+      "width": 900,
+      "height": 882,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-124080",
+      "sha256": "9f392130471ada1baad271419805e5517d4cf68768e673d9c95a988c8c4ded6a",
+      "bytes": 118372,
+      "width": 739,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-125247",
+      "sha256": "be085d6b19173309b061b873e55c8a5e2616b03647978b9d411a2a9abb4d455a",
+      "bytes": 103396,
+      "width": 756,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-167142",
+      "sha256": "7707b0b4a923ba174f630214fc3efe1869dd287d36eeeda3583b07c9b836b6e4",
+      "bytes": 161759,
+      "width": 723,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-141549",
+      "sha256": "5c80d07b82493a17cbf9186e3ced4ee8b6b97488cfb796f0c551d378144e4b52",
+      "bytes": 83680,
+      "width": 553,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-153603",
+      "sha256": "9d2fd08baad8a499a8b8bfa0910fd113c717eb43d1968deafc77727d42fe3ae1",
+      "bytes": 164876,
+      "width": 779,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-160289",
+      "sha256": "972e9e05f1f9c0a6cdba32d315f868da9c68f4182102f3a7171f8f03a7ca8199",
+      "bytes": 66507,
+      "width": 425,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-143206",
+      "sha256": "893f5f7bf18e7392e4d483fd22e10922c55d1a2f31d21601a71117a70076204f",
+      "bytes": 112078,
+      "width": 693,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-152263",
+      "sha256": "63e121fa9c2061d942df930849680ce0bca20c622cafe0c590a7b40483de9ca2",
+      "bytes": 126791,
+      "width": 661,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-124092",
+      "sha256": "472baee55af315f0c56ce0e636114b8b737d47efac525a97b90668f8e0f6eb1e",
+      "bytes": 104958,
+      "width": 739,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-121946",
+      "sha256": "92f5feb5ef474546026a902f7c46392e8a1fac036602551a0506f7fc5f8c6abe",
+      "bytes": 89477,
+      "width": 712,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-122158",
+      "sha256": "4a03782caf957e35e72f919d42dd537f901de93d747dd531e16b861e1fce1cec",
+      "bytes": 122775,
+      "width": 761,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-96263",
+      "sha256": "7f014a943ba021a715ea58321354d43e3b869b2d801e09bf881a773e801b56c2",
+      "bytes": 100170,
+      "width": 698,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-125951",
+      "sha256": "94ce6c8c73bc9fcb40c1fa0055b6592b827041e8e33e33c4cff7ec737e3bedf9",
+      "bytes": 92285,
+      "width": 717,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-128394",
+      "sha256": "faca5770bb447329703591308fc3b75cf83bcc51ca28adb6cca630b9de6af0dc",
+      "bytes": 119511,
+      "width": 663,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-155819",
+      "sha256": "1deea5ed5e5a1b61d8acdff3cb12e4743f18ceadf4d1fa87c8102e63c50b82f7",
+      "bytes": 128496,
+      "width": 765,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-139730",
+      "sha256": "dd8d5dc5915bfb21edf9207282b3c61b06757e5f70170834df0581bf6381bf6d",
+      "bytes": 81311,
+      "width": 580,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-163350",
+      "sha256": "9a26fa85470f6c6be27447f695f081e62eab609e8966ef191129dbb6d0cfd99e",
+      "bytes": 105107,
+      "width": 708,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-145999",
+      "sha256": "50dcd7bb60e2e3b12ca73027711cefd5e948787764d3c273d035638c9b00fba8",
+      "bytes": 106238,
+      "width": 591,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-148369",
+      "sha256": "016c804b0bb09ad6abee44e482569041b79f910a2163b0de9858eab5be83845e",
+      "bytes": 98656,
+      "width": 707,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-122344",
+      "sha256": "e8e6e4c61223b271bfb38302ae79a800c2f236e6eca07e78cd4007bb0dd44c3b",
+      "bytes": 200259,
+      "width": 813,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-136682",
+      "sha256": "d642665d0ef6db149c2db0019c9d326854fd78b98eddd9a38aedf8f063a5849e",
+      "bytes": 90067,
+      "width": 551,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-146469",
+      "sha256": "279bbe1e284ff48af475db08e7ed0a93331b23b1ac937e8ecac4b9c6dba1f5f1",
+      "bytes": 125505,
+      "width": 701,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-150055",
+      "sha256": "4c5b5d06f11be459ba552c98397d795394462e4e6b98104176c77eb48ecb595f",
+      "bytes": 91538,
+      "width": 738,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-122341",
+      "sha256": "9a791f25e1d59781811864c867f4ae612277ebbf9b0fbd161bb2422ba9ab380b",
+      "bytes": 130459,
+      "width": 722,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-135875",
+      "sha256": "ef3169c4cafe7432d9096257c72853ad1bfeb82f1f581e0673df4ade00767c16",
+      "bytes": 109655,
+      "width": 674,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-147447",
+      "sha256": "03e5a8c303161064f59bb658cb35f3d39b5e2ad087f7ede8479bed3e2eebe960",
+      "bytes": 135962,
+      "width": 687,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-153406",
+      "sha256": "6d3867af5eaa45334b8730823f3356099f6659f9ec0f5ac5f2485c2657c7620a",
+      "bytes": 120718,
+      "width": 708,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-119701",
+      "sha256": "dfc27deaf41c11c725b6f2e3ce3af24594b0b47c1a6d409654790b1ef98c0f2a",
+      "bytes": 114033,
+      "width": 653,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-124990",
+      "sha256": "aaafc38d3ad982ec44e0288d40f2bcd86486b3480b74daa3d7002ba37d99b3bc",
+      "bytes": 106268,
+      "width": 624,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-141328",
+      "sha256": "5652c372f88281a74ab7482da8072152257135ceec6d27bdc01529ae21ef89e3",
+      "bytes": 74174,
+      "width": 693,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-169684",
+      "sha256": "7a9385f054a2bc0da089574b7ce489ccb99bdb8708b699962ddbad4661c06f64",
+      "bytes": 119109,
+      "width": 753,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-122347",
+      "sha256": "4c89bfb53a34b1c699d723c85487959435151ca158fec282ae1be9de069adefe",
+      "bytes": 98233,
+      "width": 719,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-137335",
+      "sha256": "d8108f67b54668ab96249a0f55ca7bd2f916ea9ddb48419ec5e173bc84ab5772",
+      "bytes": 180131,
+      "width": 622,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-130162",
+      "sha256": "186f8fdf0cedbde7cce115afb8f75a186922efb97a526df94d725b9bac332f3a",
+      "bytes": 129069,
+      "width": 725,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-149029",
+      "sha256": "79ac201c5b51b0878466e818418fe2a6442e13ae98cd1d2041d10c493b9c344f",
+      "bytes": 96025,
+      "width": 749,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-117030",
+      "sha256": "4eeb6c4594b0590092c695cdf723ae77b5ddd66bd98991dba52d2b5d168565bc",
+      "bytes": 98079,
+      "width": 692,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-125895",
+      "sha256": "8706810660d4150d22ac5be5420f3830b4480f14d992086211df15b32b996fde",
+      "bytes": 122376,
+      "width": 690,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-146446",
+      "sha256": "22223921cef76160c23d02c270e99ed98e5678eae447c33f03ded8e28d941357",
+      "bytes": 56261,
+      "width": 750,
+      "height": 707,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-123490",
+      "sha256": "9d4f80c682525bd4525e727b0a61362caed7989158262dc82ea0c3d97b2488ca",
+      "bytes": 62775,
+      "width": 654,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-95286",
+      "sha256": "f3e9780abd693dc077ce2b615bbeb24bc57b199c24b71d45a6541df60868db5e",
+      "bytes": 125116,
+      "width": 759,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-137259",
+      "sha256": "fd5e6949bc33e38627c8ba0daa52bd4500dfd9a8954adc5d19d6360321803310",
+      "bytes": 81029,
+      "width": 684,
+      "height": 893,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-141936",
+      "sha256": "eab2990980c7d4d0b79cdfc6eb7edcffac77d26842d2d1f78366f681218fa4f6",
+      "bytes": 52672,
+      "width": 750,
+      "height": 605,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-307326",
+      "sha256": "901ee9771be1f172c9f3a11f77bf7f7bdcb75f2f4374b8dbabf0e12c5deb1579",
+      "bytes": 131074,
+      "width": 681,
+      "height": 900,
+      "faceBoxVerified": true
+    },
+    {
+      "id": "cma-145924",
+      "sha256": "49c5ea3807c586b2eafc233230cb25e1075f767588008c083b5371216ca76b0a",
+      "bytes": 210870,
+      "width": 704,
+      "height": 893,
+      "faceBoxVerified": true
+    }
+  ]
+}
