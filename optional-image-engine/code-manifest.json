@@ -1,0 +1,58 @@
+{
+  "code_sha": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+  "model_sha": "82a4fa6735ca58432b6ce39301b4b9ee066dea47",
+  "code_repository": "https://github.com/KlingAIResearch/LivePortrait",
+  "source_files": [
+    {
+      "path": "liveportrait/camera.py",
+      "sha256": "8f8f5c31d688c8a67b0497430fe0fa96b1d268fa446b9fd495cb923dc55eb003"
+    },
+    {
+      "path": "liveportrait/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "liveportrait/modules/dense_motion.py",
+      "sha256": "941cef6bf200a600c0e58e0a8e119eecfb1224e02b1fdc80e871817db28f427f"
+    },
+    {
+      "path": "liveportrait/modules/appearance_feature_extractor.py",
+      "sha256": "106131d0f20036d9418167911c63eddfd901552c9942d8c55c92afc6e41bc7c1"
+    },
+    {
+      "path": "liveportrait/modules/motion_extractor.py",
+      "sha256": "9c2397ce43c81bd38377dfb539765bb51f3999c58b72c61309724a5fc0fb66a0"
+    },
+    {
+      "path": "liveportrait/modules/warping_network.py",
+      "sha256": "0ed1c96263c58e0be8cae8a921a83ed777bcf561e67f060c5b1364e2b00b1f3f"
+    },
+    {
+      "path": "liveportrait/modules/convnextv2.py",
+      "sha256": "477a1c0005d6d126ed29dee8cba387a7993050f67d0ac88a80381ac7a879c4c3"
+    },
+    {
+      "path": "liveportrait/modules/spade_generator.py",
+      "sha256": "2c8efda8979a0eb3f68c6fa0e1185e4360b42319c078d5420b5bb72255d7785a"
+    },
+    {
+      "path": "liveportrait/modules/util.py",
+      "sha256": "15c209b3951ff7b739fb5b7c518711005dffb298e4afc2fbdeb49b528f9a177f"
+    },
+    {
+      "path": "liveportrait/modules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "adapted_controls_source": {
+    "path": "src/gradio_pipeline.py",
+    "url": "https://github.com/KlingAIResearch/LivePortrait/blob/9b294b3d0536135442ea73cb01e6cb3ca7029dd3/src/gradio_pipeline.py",
+    "sha256": "175098914dd3a4416e55e68096f9fdbca007f7c0389e2e771e53a1f0d40eceed",
+    "functions": [
+      "update_delta_new_eyeball_direction",
+      "update_delta_new_smile",
+      "update_delta_new_eyebrow",
+      "update_delta_new_lip_variation_three"
+    ]
+  }
+}
